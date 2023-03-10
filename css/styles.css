@@ -1,0 +1,137 @@
+:root {
+  --logo-brand-color: #4d5ae5;
+  --logo-text-color-dark: #f4f4fd;
+  --primary-text-color: #2e2f42;
+  --primary-text-color-dark: #fff;
+  --secondary-text-color: #434455;
+  --secondary-text-color-dark: #e7e9fc;
+  --active-link-color: #404bbf;
+  --button-order-text-color: #ffffff;
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  font-style: inherit;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  color: var(--primary-text-color);
+  font-size: 16px;
+}
+
+.hidden-element {
+  display: none;
+}
+/* ================COMPONENT========== */
+.logo {
+  font-family: var(--secondary-font-family);
+  font-style: inherit;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.logo-first-part {
+  color: var(--logo-brand-color);
+}
+
+.button-order {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--button-order-text-color);
+  background-color: var(--logo-brand-color);
+}
+
+.button-order:hover,
+.button-order:focus {
+  background-color: var(--active-link-color);
+  cursor: pointer;
+}
+
+.button-filter {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--logo-brand-color);
+  background-color: #var(var(--logo-text-color-dark));
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--button-order-text-color);
+  background-color: var(--active-link-color);
+  cursor: pointer;
+}
+.second-level-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.third-level-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.text {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+/* ===============/COMPONENT========== */
+/* =============== HEADER============= */
+
+.menu-item {
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--active-link-color);
+}
+
+.contact {
+  font-style: inherit;
+}
+/* ==============/HEADER============= */
+/* =================HERO================== */
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-dark);
+}
+
+/* =================/HERO================== */
+/* ======================ADVENCES=============== */
+/* ======================ADVENCES=============== */
+/* ===================FOOTER==================== */
+.logo-dark {
+  color: var(--logo-text-color-dark);
+}
+.text-dark {
+  color: var(--secondary-text-color-dark);
+}
