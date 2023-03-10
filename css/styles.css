@@ -1,14 +1,14 @@
 :root {
-  --logo-brand-color: #4d5ae5;
-  --logo-text-color-dark: #f4f4fd;
-  --primary-text-color: #2e2f42;
-  --primary-text-color-dark: #fff;
-  --secondary-text-color: #434455;
-  --secondary-text-color-dark: #e7e9fc;
-  --active-link-color: #404bbf;
-  --button-order-text-color: #ffffff;
-  --primary-font-family: 'Roboto', sans-serif;
-  --secondary-font-family: 'Raleway', sans-serif;
+  --logo-brand-color: #4d5ae5; /*IRIS*/
+  --logo-text-color-dark: #f4f4fd; /*CLOUD*/
+  --primary-text-color: #2e2f42; /*NAVY BLUE*/
+  --primary-text-color-dark: #fff; /*WHITE*/
+  --secondary-text-color: #434455; /*SLATE*/
+  --secondary-text-color-dark: #e7e9fc; /*CORNFLOVER*/
+  --active-link-color: #404bbf; /*OCAEN*/
+  --button-order-text-color: #ffffff; /*WHITE*/
+  --primary-font-family: 'Roboto', sans-serif; /**/
+  --secondary-font-family: 'Raleway', sans-serif; /**/
 }
 
 .link {
@@ -24,6 +24,7 @@
 body {
   font-family: var(--primary-font-family);
   font-style: normal;
+  font-weight: 500;
   color: var(--primary-text-color);
   font-size: 16px;
 }
@@ -49,7 +50,7 @@ body {
 }
 
 .button-order {
-  font-weight: 500;
+  font-weight: inherit;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--button-order-text-color);
@@ -63,7 +64,7 @@ body {
 }
 
 .button-filter {
-  font-weight: 500;
+  font-weight: inherit;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--logo-brand-color);
@@ -85,7 +86,7 @@ body {
 }
 
 .third-level-header {
-  font-weight: 500;
+  font-weight: inherit;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -102,7 +103,7 @@ body {
 
 .menu-item {
   font-family: var(--primary-font-family);
-  font-weight: 500;
+  /* font-weight: 500; */
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
