@@ -1,26 +1,32 @@
 :root {
-  --logo-brand-color: #4d5ae5; /*IRIS*/
-  --logo-text-color-dark: #f4f4fd; /*CLOUD*/
-  --primary-text-color: #2e2f42; /*NAVY BLUE*/
-  --primary-text-color-dark: #fff; /*WHITE*/
-  --secondary-text-color: #434455; /*SLATE*/
-  --secondary-text-color-dark: #e7e9fc; /*CORNFLOWER*/
-  --active-link-color: #404bbf; /*OCAEN*/
-  --button-order-text-color: #ffffff; /*WHITE*/
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-navy-blue: #2e2f42;
+
   --primary-font-family: 'Roboto', sans-serif; /**/
   --secondary-font-family: 'Raleway', sans-serif; /**/
-}
 
-.link {
-  text-decoration: none;
-  font-style: inherit;
-  color: inherit;
-}
-
-.list {
-  list-style: none;
-}
-
+  --primary-text-color: var(--color-slate);
+  --secondary-text-color: var(--color-navy-blue);
+  --primary-text-color-dark: var(--color-cornflower);
+  --logo-primary-color: var(--color-iris);
+  --logo-secondary-color-dark: var(--color-navy-blue);
+  --logo-secondary-color-light: var(--color-cloud);
+  --accent-link-color: var(--color-ocean);
+  --button-face-color: var(--color-iris);
+  --button-accent-face-color: var(--color-ocean);
+  --button-text-color: white;
+  --seconary-background-color: var(--color-navy-blue);
+  --button-filter-face-color:var(--color-cloud);
+  --button-filter-text-color:var(--color-iris);
+  
+} 
 body {
   font-family: var(--primary-font-family);
   font-style: normal;
@@ -29,52 +35,65 @@ body {
   font-size: 16px;
 }
 
+.link {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-link-color);
+}
+.list {
+  list-style: none;
+}
+
 .hidden-element {
   display: none;
 }
 /* ================COMPONENT========== */
 .logo {
   font-family: var(--secondary-font-family);
-  font-style: inherit;
-  text-decoration: none;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: inherit;
+  color: var(--logo-primary-color);
 }
 
-.logo-first-part {
-  color: var(--logo-brand-color);
+.logo-studio-part {
+  color: var(--logo-secondary-color-dark);
 }
 
 .button-order {
   font-weight: inherit;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--button-order-text-color);
-  background-color: var(--logo-brand-color);
+  color: var(--button-text-color);
+  background-color: var(--button-face-color);
 }
 
 .button-order:hover,
 .button-order:focus {
-  background-color: var(--active-link-color);
+  background-color: var(--button-accent-face-color);
   cursor: pointer;
 }
 
-.button-filter {
+.portfolio-filters-button {
   font-weight: inherit;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--logo-brand-color);
-  background-color: var(var(--logo-text-color-dark));
+  color: var(--button-filter-text-color);
+  background-color: var(--button-filter-face-color);
 }
 
-.button-filter:hover,
-.button-filter:focus {
-  color: var(--button-order-text-color);
-  background-color: var(--active-link-color);
+.portfolio-filters-button:hover,
+.portfolio-filters-button:focus,
+.portfolio-filters-button:active {
+  color: var(--button-text-color);
+  background-color: var(--accent-link-color);
   cursor: pointer;
 }
 .second-level-header {
@@ -103,36 +122,54 @@ body {
 
 .menu-item {
   font-family: var(--primary-font-family);
-  /* font-weight: 500; */
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-.link:hover,
-.link:focus {
-  color: var(--active-link-color);
+.header-contact-item-link {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 
-.contact {
-  font-style: inherit;
-}
 /* ==============/HEADER============= */
 /* =================HERO================== */
+.hero {
+  background-color: var(--seconary-background-color);
+}
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
+  text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-dark);
 }
 
 /* =================/HERO================== */
 /* ======================ADVENCES=============== */
+
 /* ======================ADVENCES=============== */
-/* ===================FOOTER==================== */
-.logo-dark {
-  color: var(--logo-text-color-dark);
+/* ========================WEDOING================== */
+
+/* ========================WEDOING================== */
+.wedoing-header {
+  text-align: center;
 }
-.text-dark {
-  color: var(--secondary-text-color-dark);
+/* ===================/OURTEAM========================== */
+.ourteam-header {
+  text-align: center;
+}
+.ourteam-list {
+  text-align: center;
+}
+/* ===================OURTEAM========================== */
+
+/* ===================FOOTER==================== */
+.footer {
+  background-color: var(--seconary-background-color);
+  color: var(--primary-text-color-dark);
+}
+.footer .logo-studio-part {
+  color: var(--logo-secondary-color-light);
 }
