@@ -85,6 +85,8 @@ body {
 }
 
 .portfolio-filters-button {
+  font-family: inherit;
+  font-style: inherit;
   font-weight: inherit;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -139,7 +141,7 @@ body {
 .header-contact-item-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 
 /* ==============/HEADER============= */
@@ -153,7 +155,7 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color-dark);
+  color: var(--secondary-text-color-dark);
 }
 
 /* =================/HERO================== */
@@ -170,7 +172,7 @@ body {
 .ourteam-header {
   text-align: center;
 }
-.ourteam-list {
+.ourteam-list-item {
   text-align: center;
   background-color: var(--primary-background-color);
 }
