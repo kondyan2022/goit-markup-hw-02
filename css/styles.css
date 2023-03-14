@@ -7,7 +7,6 @@
   --color-light-slate: #8e8f99;
   --color-cornflower: #e7e9fc;
   --color-cloud: #f4f4fd;
-  --color-navy-blue: #2e2f42;
 
   --primary-font-family: 'Roboto', sans-serif; /**/
   --secondary-font-family: 'Raleway', sans-serif; /**/
@@ -15,6 +14,11 @@
   --primary-text-color: var(--color-slate);
   --secondary-text-color: var(--color-navy-blue);
   --primary-text-color-dark: var(--color-cornflower);
+  --secondary-text-color-dark: white;
+  --primary-background-color: white;
+  --secondary-background-color-light: var(--color-cloud);
+  --secondary-background-color-dark: var(--color-navy-blue);
+
   --logo-primary-color: var(--color-iris);
   --logo-secondary-color-dark: var(--color-navy-blue);
   --logo-secondary-color-light: var(--color-cloud);
@@ -22,11 +26,9 @@
   --button-face-color: var(--color-iris);
   --button-accent-face-color: var(--color-ocean);
   --button-text-color: white;
-  --seconary-background-color: var(--color-navy-blue);
-  --button-filter-face-color:var(--color-cloud);
-  --button-filter-text-color:var(--color-iris);
-  
-} 
+  --button-filter-face-color: var(--color-cloud);
+  --button-filter-text-color: var(--color-iris);
+}
 body {
   font-family: var(--primary-font-family);
   font-style: normal;
@@ -38,7 +40,6 @@ body {
 .link {
   text-decoration: none;
   font-style: normal;
-  color: inherit;
 }
 
 .link:hover,
@@ -68,9 +69,11 @@ body {
 }
 
 .button-order {
+  font-family: inherit;
   font-weight: inherit;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  font-size: 16px;
   color: var(--button-text-color);
   background-color: var(--button-face-color);
 }
@@ -102,6 +105,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--secondary-text-color);
 }
 
 .third-level-header {
@@ -109,33 +113,39 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 
 .text {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
 }
 /* ===============/COMPONENT========== */
 /* =============== HEADER============= */
 
-.menu-item {
+.header-menu-item {
   font-family: var(--primary-font-family);
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.header-menu-item-link {
+  color: var(--secondary-text-color);
+}
+.header-contact {
+  font-style: normal;
 }
 
 .header-contact-item-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 /* ==============/HEADER============= */
 /* =================HERO================== */
 .hero {
-  background-color: var(--seconary-background-color);
+  background-color: var(--secondary-background-color-dark);
 }
 .hero-title {
   font-weight: 700;
@@ -151,23 +161,32 @@ body {
 
 /* ======================ADVENCES=============== */
 /* ========================WEDOING================== */
-
-/* ========================WEDOING================== */
 .wedoing-header {
   text-align: center;
 }
+/* ========================WEDOING================== */
+
 /* ===================/OURTEAM========================== */
 .ourteam-header {
   text-align: center;
 }
 .ourteam-list {
   text-align: center;
+  background-color: var(--primary-background-color);
+}
+
+.ourteam {
+  background-color: var(--secondary-background-color-light);
 }
 /* ===================OURTEAM========================== */
-
+/* =====================PORTFOLIO==================== */
+.portfolio-list-item-type {
+  color: var(--primary-text-color);
+}
+/* =====================/PORTFOLIO==================== */
 /* ===================FOOTER==================== */
 .footer {
-  background-color: var(--seconary-background-color);
+  background-color: var(--secondary-background-color-dark);
   color: var(--primary-text-color-dark);
 }
 .footer .logo-studio-part {
